@@ -168,7 +168,7 @@ namespace Car_Rental.Dao
             cmd.Parameters.AddWithValue("@customerID", customerID);
             cmd.Parameters.AddWithValue("@startDate", startDate.ToDateTime(TimeOnly.MinValue));
             cmd.Parameters.AddWithValue("@endDate", endDate.ToDateTime(TimeOnly.MinValue));
-            cmd.Parameters.AddWithValue("@type", type);
+            cmd.Parameters.AddWithValue("@type", type.Trim());
 
             int leaseID = (int)cmd.ExecuteScalar();
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Car_Rental.Exceptions
 {
-    class CarNotFoundException : Exception
+    public class CarNotFoundException : Exception
     {
        
             public CarNotFoundException(string message) : base(message) { }

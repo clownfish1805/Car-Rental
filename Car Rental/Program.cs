@@ -15,10 +15,9 @@ class Program
         {
             Console.WriteLine("Welcome to Car Rental System");
 
-            // Initialize repository
+         
             ICarLeaseRepository repository = new ICarLeaseRepositoryImpl();
 
-            // Display menu options
             while (true)
             {
                 Console.WriteLine("\n1. List Available Cars");
@@ -80,7 +79,7 @@ class Program
         Console.WriteLine("\nAvailable Cars:");
         foreach (var car in cars)
         {
-            Console.WriteLine($"{car.VehicleID} - {car.Make} {car.Model}, Year: {car.Year}, Rate: {car.DailyRate:C}");
+            Console.WriteLine($"{car.VehicleID} - {car.Make} {car.Model}, Year: {car.Year}, Rate: {car.DailyRate}");
         }
     }
 
